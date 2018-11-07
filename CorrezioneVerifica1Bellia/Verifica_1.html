@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        p.fluttuante {
+            float: left;
+            border: solid;
+            max-width: 300px;
+            border-color: yellow;
+            margin: 10px;
+        }
+
+        p.fisso {
+            border: solid;
+            border-top: dashed;
+            border-left: double;
+            color: green;
+            border-color: red;
+
+            max-width: 500px;
+            display: inline-block;
+
+        }
+
+        .buffo {
+            border: double;
+            max-width: 100px;
+            margin-bottom: 25px;
+            padding: 10px;
+            text-align: center;
+            margin: 5px;
+            margin-right: 5;
+            display: inline-block;
+        }
+
+        .center {
+            text-align: center;
+            color:goldenrod;
+        }
+
+        p.right{
+            text-align: right;
+        }
+
+        article {
+            border: solid;
+            margin: 10px 100px 10px 100px;
+            padding: 20px;
+        }
+
+        div {
+            border: dashed;
+            text-align: center;
+
+            font-family: Verdana;
+        }
+
+        footer {
+
+            border-style: inset;
+            border-width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> Crea una pagina web come la seguente (h1) [font-family]</h1>
+
+        <h2> Dove indicato usa il tag tra parentesi tonde (h2) </h2>
+
+        <p class="buffo"> dove non viene specificato nulla devi ottenere lo stesso risultato grafico-
+            <br> NOTA BENE: IL CODICE DEVE ESSERE  <b> INDENTATO </b> </p>
+
+        <p class="fisso">Se trovi delle parentesi quadre invece sono specificate delle proprietà del box che "devi"
+            modificare per ottenere il risultato [display]</p>
+    </div>
+
+    <p>per il riquadro giallo sotto <b>non usare</b> margin</p>
+    <p class="right">prova a usare float</p>
+    <article>
+
+        <p class="fluttuante">A volte possono essere indicate sia il tipo di tag che lo stile (p)
+            [ float, border, max-width, border-color]
+        </p>
+
+        <h3> Ricapitolando (h3) </h3>
+        <p> La verifica sarà più o meno strutturata così (p) <br>
+            - I tag <u>obbligatori</u> sono indicati tra parentesi tonde <br>
+            - Gli stili <i>obbligatori</i> indicati tra parentesi quadre <br>
+            - Dove <b>non</b> trovi indicazioni cerca di attenerti il più possibile allo stile che vedi
+        </p>
+    </article>
+
+    <article><code>Qui usa il tag &ltcode&gt;</code></article>
+    <div style="width:300px;border-style:solid; border-color:chartreuse;margin:auto; display:block" >
+        <img style="width:300px";  src="mucca.jpg">
+        <figcaption>"usa  margin:auto"</figcaption>
+    </div>
+    <footer>
+        <h3 class="center">Scala di valutazione (h3) [text-align:center]</h3>
+        <p class="center"> attinenza ai tag 2 pt [text-align:center]</p>
+
+        <p class="center"> attinenza agli stili indicati 3 pt [text-align:center]</p>
+        <p class="center"> attinenza globale allo stile (anche dove non specificato) 4 pt [text-align:center]</p>
+    </footer>
+
+
+</body>
+
+</html>
