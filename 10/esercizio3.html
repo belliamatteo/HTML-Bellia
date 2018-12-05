@@ -11,10 +11,10 @@
   animation-duration: 4s;
 }
 @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
-  to {background-color: green;}
-  to {background-color: blue;}
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: green;}
+  100% {background-color: blue;}
 }
 
 
@@ -24,10 +24,18 @@
   height: 200px;
   background-color: red;
   border: 1px solid black;
-  transform: scale(0.7, 0.7);
+  position: relative;
+  animation-name: pino;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-timing-function: ease;
 }
-.guepequeno:hover {
-  background-color: yellow;
+@keyframes pino {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:green; left:200px; top:200px;}
+  75%  {background-color:blue; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 
@@ -37,11 +45,14 @@
   height: 200px;
   background-color: green;
   border: 1px solid black;
-  transition-timing-function:ease-in-out;
-  transition: 5s; 
+  position: relative;
+  animation-name: hola;
+  animation-duration: 3s;  
+  animation-fill-mode: forwards;  
 }
-.molo:hover {
-  transform: translate(200px, 0px);
+@keyframes hola {
+  from {top: 0px;}
+  to {top: 200px; background-color: blue;}
 }
 
 
@@ -51,10 +62,17 @@
   height: 200px;
   background-color: pink;
   border: 1px solid black;
-  transition: width 2s linear 1s;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -2s;
 }
-.same:hover {
-  width: 300px;
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 
@@ -64,12 +82,17 @@
   height: 200px;
   background-color: brown;
   border: 1px solid black;
-  transition: width 2s, height 2s, transform 2s;
+  position: relative;
+  animation-name: kul;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-.sumo:hover {
-  width: 300px;
-  height: 300px;
-  transform: rotate(180deg);
+@keyframes kul {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 
@@ -79,11 +102,17 @@
   height: 200px;
   background-color: grey;
   border: 1px solid black;
-  transition: width 2s, height 4s;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;
 }
-.paolo:hover {
-  width: 300px;
-  height: 300px;
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 
@@ -93,11 +122,18 @@
   height: 200px;
   background-color: grey;
   border: 1px solid black;
-  transition: width 2s, height 4s;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate; 
 }
-.gianni:hover {
-  width: 300px;
-  height: 300px;
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 
@@ -119,11 +155,18 @@
   height: 200px;
   background-color: grey;
   border: 1px solid black;
-  transition: width 2s, height 4s;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse; 
 }
-.beppe:hover {
-  width: 300px;
-  height: 300px;
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 
