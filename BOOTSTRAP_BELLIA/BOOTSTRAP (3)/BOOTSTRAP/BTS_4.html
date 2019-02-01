@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:yellow; background-image: url(r.jpg)">
+
+    <div class="row">
+        <div class="col-sm-12" style="background-color:goldenrod; font-family: Times New Roman, Times, serif; text-align: center">
+            <h1 style="color:lightskyblue">THOR</h1>
+        </div>
+    </div>
+
+    <div class="container col-sm-12" style="background-color:gold">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary" style="background-color:gold; border-color:gold;"><a target="thor"
+                    href="trama.html">Trama</a></button>
+            <button type="button" class="btn btn-primary" style="background-color:gold; border-color:gold"><a href="produzione.html"
+                    target="thor">Produzione</a></button>
+            <button type="button" class="btn btn-primary" style="background-color:gold; border-color:gold"><a href="film.html"
+                    target="thor">Film</a></button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="background-color:gold; border-color:gold; color:blue">
+                    Personaggi
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="personaggiprincipali.html" target="thor">Personaggi principali</a>
+                    <a class="dropdown-item" href="cameo.html" target="thor">Cameo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="trama.html" class="iframe" name="thor" style="width:41.5%; height:730px;"></iframe>
+    <img src="thor2.jpg" alt="Thor" style="width:58%; height:1450px;" style=float:left;>
+
+    <div class="container">
+        <h2 style = color:white>Badges</h2>
+        <h1 style = color:white>Example heading <span class="badge badge-secondary" style = color:white>New</span></h1>
+        <h2 style = color:white>Example heading <span class="badge badge-secondary" style = color:white>New</span></h2>
+        <h3 style = color:white>Example heading <span class="badge badge-secondary" style = color:white>New</span></h3>
+        <h4 style = color:white>Example heading <span class="badge badge-secondary" style = color:white>New</span></h4>
+        <h5 style = color:white>Example heading <span class="badge badge-secondary" style = color:white>New</span></h5>
+        <h6 style = color:white>Example heading <span class="badge badge-secondary" style = color:white>New</span></h6>
+      </div>
+
+      <div class="container">
+        <h2 style = color:white>Pagination</h2>
+        <p style = color:white>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>                  
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h2 style = color:white>Basic List Group</h2>
+        <ul class="list-group">
+          <li class="list-group-item">First item</li>
+          <li class="list-group-item">Second item</li>
+          <li class="list-group-item">Third item</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h2 style = color:white>Basic Card</h2>
+        <div class="card">
+          <div class="card-body">Basic card</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 style = color:white>Simple Collapsible</h2>
+        <p style = color:white>Click on the button to toggle between showing and hiding content.</p>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+        <div id="demo" class="collapse">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+
+      <div class="container">
+        <h2 style = color:white>Nav</h2>
+        <p style = color:white>Basic horizontal menu:</p>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+
+</body>
+
+</html>
